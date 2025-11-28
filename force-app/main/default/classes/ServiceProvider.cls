@@ -5,7 +5,7 @@ public class ServiceProvider {
     }
     
     public static void restore(){
-        System.debug('Hello World');
+        System.debug('Hello World Squared');
     }
 
 }
