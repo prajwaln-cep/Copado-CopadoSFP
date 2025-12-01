@@ -1,11 +1,11 @@
 public class ServiceProviderUtil {
     
-    public static String getAccounts() {
+    public static List<Account> getAccounts() {
         
         String accList;
 		List<Account> accarrayList = [SELECT Id,Name FROM ACCOUNT LIMIT 10];
 		accList = JSON.serialize(accarrayList);
-		return accList;
+		return accarrayList;
     }
 
 }
